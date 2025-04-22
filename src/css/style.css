@@ -6,7 +6,22 @@
  */
 
 /*=== MEDIA QUERY ===*/
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600,700|Montserrat:900,700");
+
+:root{
+	--main: #000;
+	--background: #fff;
+	--froddes: #2ebaae;
+  --dark: #006b62;
+  --op: #006b6285;
+}
+
+::selection{
+	background-color: #3fb1a3;
+	color: #fff;
+}
+
 html {
   overflow-x: hidden;
 }
@@ -56,7 +71,7 @@ p {
 }
 
 .navbar-toggle .icon-bar {
-  background: #FF715B;
+  background: var(--froddes);
 }
 
 input[type=email], input[type=password], input[type=text], input[type=tel] {
@@ -67,7 +82,7 @@ input[type=email], input[type=password], input[type=text], input[type=tel] {
 }
 input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, input[type=tel]:focus {
   box-shadow: none;
-  border: 1px solid #FF715B;
+  border: 1px solid var(--froddes);
 }
 
 .form-control {
@@ -76,7 +91,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #FF715B;
+  border: 1px solid var(--froddes);
 }
 
 .py-7 {
@@ -106,35 +121,35 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .btn-main {
-  background: #FF715B;
+  background: var(--froddes);
   color: #fff;
-  border-color: #FF715B;
+  border-color: var(--froddes);
 }
 .btn-main:hover {
-  color: #FF715B;
+  color: var(--froddes);
   background: transparent;
 }
 
 .btn-main-2 {
-  background: #FF715B;
+  background: var(--froddes);
   color: #fff;
-  border-color: #FF715B;
+  border-color: var(--froddes);
 }
 .btn-main-2:hover {
-  color: #FF715B;
+  color: var(--froddes);
   background: transparent;
-  border-color: #FF715B;
+  border-color: var(--froddes);
 }
 
 .btn-solid-border {
-  border: 2px solid #FF715B;
+  border: 2px solid var(--froddes);
   background: transparent;
   color: #111;
 }
 .btn-solid-border:hover {
-  border: 2px solid #FF715B;
+  border: 2px solid var(--froddes);
   color: #fff;
-  background: #FF715B;
+  background: var(--froddes);
 }
 
 .btn-transparent {
@@ -153,9 +168,9 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
   color: #111;
 }
 .btn-white:hover {
-  background: #FF715B;
+  background: var(--froddes);
   color: #fff;
-  border-color: #FF715B;
+  border-color: var(--froddes);
 }
 
 .btn-solid-white {
@@ -184,7 +199,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .bg-primary {
-  background: #FF715B;
+  background: var(--froddes);
 }
 
 .bg-primary-dark {
@@ -225,7 +240,7 @@ input[type=email]:focus, input[type=password]:focus, input[type=text]:focus, inp
 }
 
 .subtitle {
-  color: #FF715B;
+  color: var(--froddes);
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -284,7 +299,7 @@ a {
 }
 
 a:focus, a:hover {
-  color: #FF715B;
+  color: var(--froddes);
   text-decoration: none;
 }
 
@@ -457,7 +472,7 @@ a:focus {
 }
 
 .dropdown-item:hover {
-  background: #FF715B;
+  background: var(--froddes);
   color: #fff;
 }
 
@@ -588,7 +603,7 @@ ul.dropdown-menu li {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/main-banner1.jpg") no-repeat 80% 50%;
+  background: url("../images/bg/bg-main.png") no-repeat 80% 50%;
   background-size: cover;
   padding: 120px 0px;
   min-height: 800px;
@@ -599,9 +614,11 @@ ul.dropdown-menu li {
 .banner .block h1 {
   font-size: 75px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 600;
+  color: #222222e5;
   letter-spacing: -1.2px;
-  text-transform: capitalize;
+  text-transform: uppercase;
+  font-family: "Goldman", sans-serif;
 }
 
 .letter-spacing {
@@ -609,7 +626,7 @@ ul.dropdown-menu li {
 }
 
 .text-color {
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 @media (max-width: 480px) {
@@ -655,7 +672,7 @@ ul.dropdown-menu li {
   font-size: 50px;
 }
 .about-item a {
-  color: #FF715B;
+  color: var(--froddes);
   font-weight: 500;
 }
 .about-item .icon {
@@ -694,7 +711,7 @@ ul.dropdown-menu li {
   padding-top: 16px;
   border-radius: 10px;
   display: inline-block;
-  color: #FF715B;
+  color: var(--froddes);
 }
 .icon-block h5 {
   margin-top: 25px;
@@ -709,7 +726,7 @@ ul.dropdown-menu li {
   color: #111;
 }
 .feature-list ul li i {
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 .video-img {
@@ -732,7 +749,7 @@ ul.dropdown-menu li {
   width: 100px;
   height: 100px;
   background: #fff;
-  color: #FF715B;
+  color: var(--froddes);
   border-radius: 100%;
   text-align: center;
   display: inline-block;
@@ -774,7 +791,7 @@ ul.dropdown-menu li {
 }
 
 .counter {
-  background: #FF715B;
+  background: var(--froddes);
 }
 .counter .counter-item h2 {
   color: #fff;
@@ -792,7 +809,7 @@ ul.dropdown-menu li {
   height: 100px;
   border-radius: 100%;
   color: #fafafa;
-  background: #FF715B;
+  background: var(--froddes);
   display: inline-block;
   padding-top: 28px;
 }
@@ -813,7 +830,7 @@ ul.dropdown-menu li {
   line-height: 1.1;
   margin-right: 20px;
   float: left;
-  color: #FF715B;
+  color: var(--froddes);
 }
 .service-item-list p {
   padding-left: 50px;
@@ -923,7 +940,7 @@ ul.dropdown-menu li {
 }
 
 .text-color-primary {
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 .testimonial-wrap {
@@ -991,7 +1008,7 @@ ul.dropdown-menu li {
 }
 .pricing-block {
   padding: 20px 0px 50px 0px;
-  border-top: 7px solid #FF715B;
+  border-top: 7px solid var(--froddes);
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border: 0px;
@@ -1041,7 +1058,7 @@ ul.dropdown-menu li {
   width: 0%;
   position: absolute;
   transition: all 0.25s cubic-bezier(0.86, 0, 0.07, 1);
-  background: rgba(255, 113, 91, 0.98);
+  background: var(--op);
   opacity: 0;
   overflow: hidden;
 }
@@ -1185,7 +1202,7 @@ ul.dropdown-menu li {
   margin-right: 10px;
 }
 .nav-links .page-numbers:hover {
-  background: #FF715B;
+  background: var(--froddes);
   color: #fff;
 }
 
@@ -1211,7 +1228,7 @@ ul.dropdown-menu li {
   padding: 40px;
   font-style: italic;
   background: #f5f6ff;
-  border-left: 5px solid #FF715B;
+  border-left: 5px solid var(--froddes);
   margin: 25px 0px;
 }
 
@@ -1296,7 +1313,7 @@ ul.dropdown-menu li {
   font-weight: 500;
 }
 .post-comments .comment-author a {
-  color: #FF715B;
+  color: var(--froddes);
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1307,7 +1324,7 @@ ul.dropdown-menu li {
   font-size: 12px;
 }
 .post-comments .comment-button {
-  color: #FF715B;
+  color: var(--froddes);
   display: inline-block;
   margin-left: 5px;
   font-size: 12px;
@@ -1317,7 +1334,7 @@ ul.dropdown-menu li {
   display: inline-block;
 }
 .post-comments .comment-button:hover {
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 .post-excerpt {
@@ -1335,7 +1352,7 @@ ul.dropdown-menu li {
 .post-excerpt blockquote.quote-post p {
   line-height: 30px;
   font-size: 20px;
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 .single-blog {
@@ -1362,7 +1379,7 @@ ul.dropdown-menu li {
   color: #000;
 }
 .next-prev a:hover {
-  color: #FF715B;
+  color: var(--froddes);
 }
 .next-prev .prev-post i {
   margin-right: 10px;
@@ -1381,7 +1398,7 @@ ul.dropdown-menu li {
   font-size: 16px;
 }
 .social-profile ul li a i:hover {
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 .comments-section {
@@ -1425,7 +1442,7 @@ ul.dropdown-menu li {
   margin-bottom: 8px;
 }
 .comment-wrap .media .media-heading a {
-  color: #FF715B;
+  color: var(--froddes);
   font-size: 13px;
 }
 .comment-wrap .media .comment-meta {
@@ -1446,7 +1463,7 @@ ul.dropdown-menu li {
 }
 .comment-reply-form input:focus, .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #FF715B;
+  border: 1px solid var(--froddes);
 }
 .comment-reply-form textarea, .comment-reply-form .btn-main {
   height: auto;
@@ -1477,7 +1494,7 @@ ul.dropdown-menu li {
   transition: all 0.3s ease;
 }
 .sidebar-widget.category ul li a:hover {
-  color: #FF715B;
+  color: var(--froddes);
   padding-left: 5px;
 }
 .sidebar-widget.category ul li span {
@@ -1500,7 +1517,7 @@ ul.dropdown-menu li {
 }
 .sidebar-widget.tags a:hover {
   color: #fff;
-  background: #FF715B;
+  background: var(--froddes);
 }
 
 .search-form {
@@ -1532,7 +1549,7 @@ ul.dropdown-menu li {
   color: #fff;
 }
 .logo span {
-  color: #FF715B;
+  color: var(--froddes);
 }
 
 .widget h4 {
@@ -1566,6 +1583,6 @@ ul.dropdown-menu li {
   margin-bottom: 18px;
 }
 .widget-contact h6 i {
-  color: #FF715B;
+  color: var(--froddes);
 }
 /*# sourceMappingURL=style.css.map */
