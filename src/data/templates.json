@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "title":"Barril & Co.",
+        "category":"Hostelería y Alimentación",
+        "img":"/src/images/templates/barrilco.png",
+        "icon":"fas fa-wine-glass-alt"
+    },
+    {
+        "id":2,
+        "title":"Diseñador Gráfico",
+        "category":"Profesionales Independientes",
+        "img":"/src/images/templates/diseñador_grafico.png",
+        "icon":"fas fa-briefcase"
+    },
+    {
+        "id":3,
+        "title":"DJ Sonic Wave",
+        "category":"Profesionales Independientes",
+        "img":"/src/images/templates/dj_sonic_wave.png",
+        "icon":"fas fa-briefcase"
+    },
+    {
+        "id":4,
+        "title":"Estilo Corte",
+        "category":"Peluquería y Belleza",
+        "img":"/src/images/templates/estilo_corte2.png",
+        "icon":"fas fa-cut"
+    },
+    {
+        "id":5,
+        "title":"Power Gym",
+        "category":"Salud y Fitness",
+        "img":"/src/images/templates/powergym.png",
+        "icon":"fas fa-heart"
+    },
+    {
+        "id":6,
+        "title":"Eternal Journey",
+        "category":"Viajes y Turismo",
+        "img":"/src/images/templates/eternal_journey.png",
+        "icon":"fas fa-plane"
+    }
+]

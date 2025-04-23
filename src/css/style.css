@@ -8,13 +8,15 @@
 /*=== MEDIA QUERY ===*/
 @import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Rubik:400,500,600,700|Montserrat:900,700");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100..900&display=swap');
+
 
 :root{
 	--main: #000;
 	--background: #fff;
 	--froddes: #2ebaae;
   --dark: #006b62;
-  --op: #006b6285;
+  --op: #006b62ea;
 }
 
 ::selection{
@@ -427,6 +429,9 @@ a:focus {
   font-size: 18px;
   transition: all 0.25s ease;
 }
+#navbar .nav-link:hover {
+  color: var(--froddes);
+}
 
 #navbar.nav-text-white .nav-link {
   color: #fff;
@@ -603,7 +608,7 @@ ul.dropdown-menu li {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/bg-main.png") no-repeat 80% 50%;
+  background: url("../images/bg/mainbg.png") no-repeat 80% 50%;
   background-size: cover;
   padding: 120px 0px;
   min-height: 800px;
@@ -612,10 +617,10 @@ ul.dropdown-menu li {
   padding-top: 120px;
 }
 .banner .block h1 {
-  font-size: 75px;
+  font-size: 65px;
   line-height: 1.2;
   font-weight: 600;
-  color: #222222e5;
+  color: #222222;
   letter-spacing: -1.2px;
   text-transform: uppercase;
   font-family: "Goldman", sans-serif;
@@ -944,12 +949,13 @@ ul.dropdown-menu li {
 }
 
 .testimonial-wrap {
-  margin-left: calc((100% - 1140px) / 2);
-  margin-right: -10%;
+  /* margin-left: calc((100% - 1140px) / 2); */
+  /* margin-right: -10%; */
+  padding: 0 25px 0 200px;
 }
 
 .testimonial-block {
-  margin: 0px 10px;
+  /* margin: 0px 10px; */
   padding: 30px 0px;
   margin-left: 12px;
   padding-left: 15px;
@@ -1065,7 +1071,7 @@ ul.dropdown-menu li {
 .portflio-item .portfolio-item-content {
   position: absolute;
   content: "";
-  right: 0px;
+  left: 0px;
   bottom: 0px;
   opacity: 0;
   transition: all 0.35s ease;
