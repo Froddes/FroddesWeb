@@ -421,11 +421,12 @@ a:focus {
 #navbar {
   position: fixed;
   top: 0;
-  background-color: #ffffffef;
-  transition: box-shadow 0.3s ease; 
+  background-color: #ffffff;
+  transition: all 0.2s ease; 
 }
 
 .navbar-shadow{
+  background-color: #ffffffef !important;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
 }
 
@@ -442,12 +443,12 @@ a:focus {
   color: var(--froddes);
 }
 
-#navbar.nav-text-white .nav-link {
+/* #navbar.nav-text-white .nav-link {
   color: #fff;
 }
 #navbar.nav-text-white .navbar-brand {
   color: #fff;
-}
+} */
 
 .navbar-brand {
   font-weight: 600;
@@ -834,7 +835,7 @@ ul.dropdown-menu li {
 }
 
 .service-item-list {
-  padding: 15px 30px;
+  padding: 20px 30px;
   background: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -852,6 +853,9 @@ ul.dropdown-menu li {
   line-height: 1.6;
   margin-bottom: 0px;
   color: #111;
+}
+.service-item-list span{
+  font-size: 90%;
 }
 
 .mb-50 {
