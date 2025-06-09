@@ -618,8 +618,8 @@ ul.dropdown-menu li {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("../images/bg/mainbg.png") no-repeat 80% 50%;
-  background-size: cover;
+  background: url("../images/bg/froddes-bg.png") no-repeat 80% 50%;
+  background-size: 90%;
   padding: 120px 0px;
   min-height: 800px;
 }
