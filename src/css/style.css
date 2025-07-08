@@ -1638,3 +1638,17 @@ ul.dropdown-menu li {
 	color: #0df053 !important;
 	background-color: #fff;
   }
+
+#politica h2{
+  font-size: 1.7em;
+  margin: 10px 0 20px 0;
+}
+#politica p{
+  font-size: 1.1em;
+}
+
+#politica ul{
+    font-size: 1.1em;
+  /* color: #2c2c2c; */
+  /* list-style: none; */
+}
