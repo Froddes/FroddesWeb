@@ -1523,7 +1523,7 @@ ul.dropdown-menu li {
 .sidebar-widget.category ul li span {
   margin-left: 10px;
 }
-.sidebar-widget.tags a {
+.tags a {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.075em;
@@ -1538,9 +1538,13 @@ ul.dropdown-menu li {
   padding: 0 25px;
   transition: all 0.2s ease;
 }
-.sidebar-widget.tags a:hover {
+.tags a:hover {
   color: #fff;
   background: var(--froddes);
+}
+
+.page-numbers.current {
+  color: #9b9b9b; /* Color más claro */
 }
 
 .search-form {

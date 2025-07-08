@@ -1,44 +1,128 @@
 [
-    {
-        "id":1,
-        "title":"Barril & Co.",
-        "category":"Hostelería y Alimentación",
-        "img":"/src/images/templates/barrilco.png",
-        "icon":"fas fa-wine-glass-alt"
-    },
-    {
-        "id":2,
-        "title":"Diseñador Gráfico",
-        "category":"Profesionales Independientes",
-        "img":"/src/images/templates/diseñador_grafico.png",
-        "icon":"fas fa-briefcase"
-    },
-    {
-        "id":3,
-        "title":"DJ Sonic Wave",
-        "category":"Profesionales Independientes",
-        "img":"/src/images/templates/dj_sonic_wave.png",
-        "icon":"fas fa-briefcase"
-    },
-    {
-        "id":4,
-        "title":"Estilo Corte",
-        "category":"Peluquería y Belleza",
-        "img":"/src/images/templates/estilo_corte2.png",
-        "icon":"fas fa-cut"
-    },
-    {
-        "id":5,
-        "title":"Power Gym",
-        "category":"Salud y Fitness",
-        "img":"/src/images/templates/powergym.png",
-        "icon":"fas fa-heart"
-    },
-    {
-        "id":6,
-        "title":"Eternal Journey",
-        "category":"Viajes y Turismo",
-        "img":"/src/images/templates/eternal_journey.png",
-        "icon":"fas fa-plane"
-    }
+  {
+    "id": 1,
+    "category": "Peluquería y Belleza",
+    "description": "Descubre nuestras plantillas diseñadas para peluquerías, salones de belleza y estéticas. Transmite estilo, profesionalidad y confianza desde tu web.",
+    "templates": [
+      {
+        "id": 1,
+        "title": "Estilo Corte 1",
+        "img": "/src/images/templates/estilo_corte1.png",
+        "alt": "Plantilla Estilo Corte 1 para peluquerías y salones de belleza",
+        "icon": "fas fa-cut"
+      },
+      {
+        "id": 2,
+        "title": "Estilo Corte 2",
+        "img": "/src/images/templates/estilo_corte2.png",
+        "alt": "Plantilla Estilo Corte 2 para peluquerías y salones de belleza",
+        "icon": "fas fa-cut"
+      },
+      {
+        "id": 3,
+        "title": "Estilo Corte 3",
+        "img": "/src/images/templates/estilo_corte3.png",
+        "alt": "Plantilla Estilo Corte 3 para peluquerías y centros estéticos",
+        "icon": "fas fa-cut"
+      },
+      {
+        "id": 4,
+        "title": "Estilo Corte 4",
+        "img": "/src/images/templates/estilo_corte4.png",
+        "alt": "Plantilla Estilo Corte 4 para negocios de belleza",
+        "icon": "fas fa-cut"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Salud y Fitness",
+    "description": "Plantillas pensadas para gimnasios, centros de yoga, entrenadores personales y negocios de bienestar. Crea una presencia fuerte y dinámica online.",
+    "templates": [
+      {
+        "id": 1,
+        "title": "Power Gym",
+        "img": "/src/images/templates/powergym.png",
+        "alt": "Plantilla Power Gym para gimnasios y entrenadores personales",
+        "icon": "fas fa-heart"
+      },
+      {
+        "id": 2,
+        "title": "Power Fitness",
+        "img": "/src/images/templates/powerfitness.png",
+        "alt": "Plantilla Power Fitness para centros de salud y fitness",
+        "icon": "fas fa-heart"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Hostelería y Alimentación",
+    "description": "Da a tu restaurante, bar o cafetería una carta de presentación digital atractiva y funcional. Plantillas listas para mostrar menús, reservas y ubicaciones.",
+    "templates": [
+      {
+        "id": 1,
+        "title": "Barril & Co.",
+        "img": "/src/images/templates/barrilco.png",
+        "alt": "Plantilla Barril & Co. para bares, restaurantes y negocios de hostelería",
+        "icon": "fas fa-wine-glass-alt"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Profesionales Independientes",
+    "description": "Si eres diseñador, fotógrafo, músico, abogado o cualquier profesional autónomo, tenemos plantillas elegantes y efectivas para destacar tu trabajo.",
+    "templates": [
+      {
+        "id": 1,
+        "title": "Diseñador Gráfico",
+        "img": "/src/images/templates/diseñador_grafico.png",
+        "alt": "Plantilla Diseñador Gráfico para portfolios profesionales",
+        "icon": "fas fa-briefcase"
+      },
+      {
+        "id": 2,
+        "title": "DJ Sonic Wave",
+        "img": "/src/images/templates/dj_sonic_wave.png",
+        "alt": "Plantilla DJ Sonic Wave para músicos y DJs independientes",
+        "icon": "fas fa-briefcase"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Galería de Fotos",
+    "description": "Muestra tu talento visual con plantillas limpias y modernas diseñadas para portfolios de fotografía, arte o diseño gráfico.",
+    "templates": [
+      {
+        "id": 1,
+        "title": "Galería Slide",
+        "img": "/src/images/templates/galeria1.png",
+        "alt": "Plantilla Galería Slide para fotógrafos y portfolios visuales",
+        "icon": "fas fa-images"
+      },
+      {
+        "id": 2,
+        "title": "Galería BLock",
+        "img": "/src/images/templates/galeria2.png",
+        "alt": "Plantilla Galería Block para mostrar proyectos creativos",
+        "icon": "fas fa-images"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Viajes y Turismo",
+    "description": "Para agencias de viajes, blogs de turismo o alojamientos rurales. Plantillas que inspiran a explorar y facilitan la reserva o el contacto.",
+    "templates": [
+      {
+        "id": 1,
+        "title": "Eternal Journey",
+        "img": "/src/images/templates/eternal_journey.png",
+        "alt": "Plantilla Eternal Journey para blogs de viajes y agencias turísticas",
+        "icon": "fas fa-plane"
+      }
+    ]
+  }
 ]
