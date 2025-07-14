@@ -7,12 +7,12 @@ const ITEMS_PER_PAGE = MAX_ROWS * 2;
 
 const templateRenderer = {
   asTemplate: function (item, category) {
-    const { title, img, icon, alt } = item;
+    const { ref, title, img, icon, alt } = item;
 
     const html = `
       <div class="col-lg-6 col-md-6">
         <div class="portflio-item position-relative mb-4">
-          <a href="project-details.html">
+          <a href="plantilla.html?template=${ref}">
             <img src="${img}" alt="${alt}" class="img-fluid w-100">
             <div class="overlay-item">
               <i class="${icon}"></i>
