@@ -6,7 +6,7 @@
     "templates": [
       {
         "id": 1,
-        "ref":"et1",
+        "ref": "et1",
         "title": "Estilo Corte 1",
         "img": "/src/images/templates/estilo_corte1.png",
         "alt": "Plantilla Estilo Corte 1 para peluquerías y salones de belleza",
@@ -15,7 +15,7 @@
       },
       {
         "id": 2,
-        "ref":"et2",
+        "ref": "et2",
         "title": "Estilo Corte 2",
         "img": "/src/images/templates/estilo_corte2.png",
         "alt": "Plantilla Estilo Corte 2 para peluquerías y salones de belleza",
@@ -24,7 +24,7 @@
       },
       {
         "id": 3,
-        "ref":"et3",
+        "ref": "et3",
         "title": "Estilo Corte 3",
         "img": "/src/images/templates/estilo_corte3.png",
         "alt": "Plantilla Estilo Corte 3 para peluquerías y centros estéticos",
@@ -33,7 +33,7 @@
       },
       {
         "id": 4,
-        "ref":"et4",
+        "ref": "et4",
         "title": "Estilo Corte 4",
         "img": "/src/images/templates/estilo_corte4.png",
         "alt": "Plantilla Estilo Corte 4 para negocios de belleza",
@@ -49,7 +49,7 @@
     "templates": [
       {
         "id": 1,
-        "ref":"pg",
+        "ref": "pg",
         "title": "Power Gym",
         "img": "/src/images/templates/powergym.png",
         "alt": "Plantilla Power Gym para gimnasios y entrenadores personales",
@@ -58,7 +58,7 @@
       },
       {
         "id": 2,
-        "ref":"pf",
+        "ref": "pf",
         "title": "Power Fitness",
         "img": "/src/images/templates/powerfitness.png",
         "alt": "Plantilla Power Fitness para centros de salud y fitness",
@@ -74,12 +74,21 @@
     "templates": [
       {
         "id": 1,
-        "ref":"byc",
+        "ref": "byc",
         "title": "Barril & Co.",
         "img": "/src/images/templates/barrilco.png",
         "alt": "Plantilla Barril & Co. para bares, restaurantes y negocios de hostelería",
         "icon": "fas fa-wine-glass-alt",
         "url": "https://barrilco.netlify.app/"
+      },
+      {
+        "id": 2,
+        "ref": "rw",
+        "title": "Restaurant Wheel",
+        "img": "/src/images/templates/wheel.png",
+        "alt": "Plantilla Restaurant para bares, restaurantes y negocios de hostelería",
+        "icon": "fas fa-wine-glass-alt",
+        "url": "https://restaurant-wheel.netlify.app/"
       }
     ]
   },
@@ -90,7 +99,7 @@
     "templates": [
       {
         "id": 1,
-        "ref":"dg",
+        "ref": "dg",
         "title": "Diseñador Gráfico",
         "img": "/src/images/templates/diseñador_grafico.png",
         "alt": "Plantilla Diseñador Gráfico para portfolios profesionales",
@@ -99,7 +108,7 @@
       },
       {
         "id": 2,
-        "ref":"dsw",
+        "ref": "dsw",
         "title": "DJ Sonic Wave",
         "img": "/src/images/templates/dj_sonic_wave.png",
         "alt": "Plantilla DJ Sonic Wave para músicos y DJs independientes",
@@ -115,7 +124,7 @@
     "templates": [
       {
         "id": 1,
-        "ref":"gs",
+        "ref": "gs",
         "title": "Galería Slide",
         "img": "/src/images/templates/galeria1.png",
         "alt": "Plantilla Galería Slide para fotógrafos y portfolios visuales",
@@ -124,7 +133,7 @@
       },
       {
         "id": 2,
-        "ref":"gb",
+        "ref": "gb",
         "title": "Galería BLock",
         "img": "/src/images/templates/galeria2.png",
         "alt": "Plantilla Galería Block para mostrar proyectos creativos",
@@ -140,7 +149,7 @@
     "templates": [
       {
         "id": 1,
-        "ref":"ej",
+        "ref": "ej",
         "title": "Eternal Journey",
         "img": "/src/images/templates/eternal_journey.png",
         "alt": "Plantilla Eternal Journey para blogs de viajes y agencias turísticas",
