@@ -11,19 +11,19 @@
     <title>Licencia de Uso | Froddes - Derechos de Plantillas Web</title>
 
     <!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="/src/images/logo-froddes.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo-froddes.png" />
 
     <!-- bootstrap.min css -->
-    <link rel="stylesheet" href="/src/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Icon Font Css -->
-    <link rel="stylesheet" href="/src/plugins/themify/css/themify-icons.css">
-    <link rel="stylesheet" href="/src/plugins/fontawesome/css/all.css">
-    <link rel="stylesheet" href="/src/plugins/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="/src/plugins/modal-video/modal-video.css">
-    <link rel="stylesheet" href="/src/plugins/animate-css/animate.css">
+    <link rel="stylesheet" href="/plugins/themify/css/themify-icons.css">
+    <link rel="stylesheet" href="/plugins/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/plugins/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="/plugins/modal-video/modal-video.css">
+    <link rel="stylesheet" href="/plugins/animate-css/animate.css">
     <!-- Slick Slider  CSS -->
-    <link rel="stylesheet" href="/src/plugins/slick-carousel/slick/slick.css">
-    <link rel="stylesheet" href="/src/plugins/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="/plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/plugins/slick-carousel/slick/slick-theme.css">
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="/src/css/style.css">
@@ -111,34 +111,29 @@
     Essential Scripts
     =====================================-->
 
-    <script src="/src/js/utils/include.js"></script>
+    <script src="/js/include.js"></script>
     <script>
         include("src/html/whatsapp.html", "#ws");
         include("src/html/navbar.html", "#navbar");
         include("src/html/footer.html", "#footer")
     </script>
     <!-- Main jQuery -->
-    <script src="/src/plugins/jquery/jquery.js"></script>
-    <script src="/src/js/contact.js"></script>
+    <script src="/plugins/jquery/jquery.js"></script>
+    <script src="/js/contact.js"></script>
     <!-- Bootstrap 4.3.2 -->
-    <script src="/src/plugins/bootstrap/js/popper.js"></script>
-    <script src="/src/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <!--  Magnific Popup-->
-    <script src="/src/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-    <!-- Slick Slider -->
-    <script src="/src/plugins/slick-carousel/slick/slick.min.js"></script>
-    <!-- Counterup -->
-    <script src="/src/plugins/counterup/jquery.waypoints.min.js"></script>
-    <script src="/src/plugins/counterup/jquery.counterup.min.js"></script>
+    <script src="/plugins/bootstrap/js/popper.js"></script>
+    <script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
 
-    <script src="/src/plugins/modal-video/modal-video.js"></script>
-    <!-- Google Map -->
-    <script src="/src/plugins/google-map/map.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkeLMlsiwzp6b3Gnaxd86lvakimwGA6UA&callback=initMap"></script>
-
-    <script src="/src/js/script.js"></script>
-
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('navbar-shadow');
+            } else {
+                navbar.classList.remove('navbar-shadow');
+            }
+        });
+    </script>
 </body>
 
 </html>
