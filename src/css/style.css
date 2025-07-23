@@ -1796,3 +1796,6 @@ iframe {
   100% { transform: scale(1); opacity: 0; }
 }
 
+.chat-layout .chat-header{
+  background-color: var(--dark) !important;
+}
