@@ -365,13 +365,6 @@ a:focus {
   outline: none;
 }
 
-@media (max-width: 480px) {
-  h2,
-  .h2 {
-    font-size: 1.3rem;
-    line-height: 36px;
-  }
-}
 #wrapper-work {
   overflow: hidden;
   padding-top: 100px;
@@ -712,7 +705,7 @@ ul.dropdown-menu li {
   .banner {
     background: #fff !important;
   }
-  .process-block{
+  .process-block {
     margin-bottom: 50px;
   }
 }
@@ -720,10 +713,10 @@ ul.dropdown-menu li {
   .banner {
     background: #fff !important;
   }
-  .block{
+  .block {
     text-align: center;
   }
-  .row{
+  .row {
     justify-content: center;
   }
 }
@@ -1765,7 +1758,7 @@ iframe {
   position: absolute;
 
   font-size: 1.5em;
-  
+
   background-color: #d9e9e8;
   min-height: 600px;
   height: 85vh;
@@ -1792,10 +1785,179 @@ iframe {
 }
 
 @keyframes sk-pulse {
-  0% { transform: scale(0); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 0; }
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
 
-.chat-layout .chat-header{
+.chat-layout .chat-header {
   background-color: var(--dark) !important;
+}
+
+/* @media (max-width: 768px) {
+  .about-item,
+  .icon-block {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .about-item .icon {
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .about-item .content {
+    padding-left: 0 !important;
+  }
+
+  .testimonial-wrap {
+    margin: 0 auto !important;
+    border-left: none;
+    padding: 15px;
+  }
+
+  .testimonial-block p {
+    padding: 30px 20px !important;
+  }
+
+  .portfolio-gallery.carrusel > div[class^="col-"] {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+} */
+
+.slick-slide img {
+  height: auto !important;
+}
+
+@media (max-width: 992px) {
+  .section.testimonial {
+    display: none;
+  }
+  .section.portfolio {
+    overflow: hidden;
+  }
+}
+
+/* === Ajustes responsivos móviles === */
+@media (max-width: 480px) {
+  h2,
+  .h2 {
+    font-size: 1.5rem;
+    line-height: 36px;
+  }
+
+  .heading{
+    margin-bottom: 60px;
+  }
+  /* Ajustar título principal */
+  .banner .block h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  /* Reducir espacio en la sección del banner */
+  .banner {
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  /* Compactar la barra de navegación */
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  /* Centrado y apilado de elementos "about" */
+  .about-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-item .icon {
+    float: none;
+    margin-bottom: 15px;
+  }
+
+  .about-item .content {
+    padding-left: 0 !important;
+  }
+
+  /* Testimonios más compactos */
+  .testimonial-wrap {
+    margin-left: 0 !important;
+    border-left: none;
+    padding: 15px;
+  }
+
+  .testimonial-block p {
+    padding: 30px 20px !important;
+  }
+
+  /* Galería de plantillas a ancho completo */
+  .portfolio-gallery.carrusel > div[class^="col-"] {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .banner .block {
+    padding-top: 0;
+  }
+
+  .row .block {
+    padding: 0 20px;
+  }
+
+  .row .heading{
+    padding: 0 10px;
+  }
+
+  .img-fluid {
+    width: 75%;
+  }
+
+  nav {
+    padding: 10px 20px !important;
+  }
+
+  span.fa-bars {
+    font-size: 85%;
+  }
+
+  section {
+    padding-top: 0 !important;
+  }
+
+  .section.process{
+    padding-bottom: 25px !important;
+  }
+
+  .section.cta{
+    padding: 50px 0 !important;
+  }
+
+  .section.portfolio{
+    padding: 50px 0 25px 0 !important;
+  }
+
+  .portfolio-gallery.carrusel {
+    padding: 0;
+  }
+
+  .section.counter{
+    padding: 50px 0 !important;
+  }
+
+  .footer.section{
+    padding: 50px 0 !important;
+  }
 }
