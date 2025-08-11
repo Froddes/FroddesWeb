@@ -643,14 +643,11 @@ ul.dropdown-menu li {
 }
 
 .banner {
-  position: relative;
-  overflow: hidden;
-  background: #fff;
   background: url("/images/bg/bg.png") no-repeat;
   background-size: cover;
-  padding: 120px 0px;
-  min-height: 800px;
+  background-position: center;
 }
+
 .banner .block {
   padding-top: 50px;
 }
@@ -669,7 +666,7 @@ ul.dropdown-menu li {
   font-weight: 600;
   font-size: 45px;
   margin-top: -20px;
-    /* text-transform: uppercase; */
+  /* text-transform: uppercase; */
 }
 
 .letter-spacing {
@@ -727,6 +724,12 @@ ul.dropdown-menu li {
   .row {
     justify-content: center;
   }
+}
+
+.about {
+  background: url("/images/bg/about.png") no-repeat;
+  background-size: cover;
+  padding: 60px 0 115px 0;
 }
 
 .about-item i {
