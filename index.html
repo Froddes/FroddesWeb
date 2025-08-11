@@ -64,12 +64,16 @@
 				<div class="col-lg-10 col-md-12 col-xl-7">
 					<div class="block">
 						<span class="text-uppercase text-sm letter-spacing ">DISEÑO WEB E INTELIGENCIA ARTIFICIAL</span>
-						<h1 class="mb-3 mt-3">Froddes, Soluciones Inteligentes</h1>
+						<h1 class="mb-3 mt-3">Froddes</h1>
+						<h2>Soluciones Inteligentes</h2>
 						<p class="mb-5">Creamos páginas web únicas y herramientas con inteligencia artificial que
 							impulsan tu negocio local: conecta, automatiza y convierte más.</p>
 						<a href="sobre-froddes.html" class="btn btn-main">Descubrenos<i
 								class="fa fa-angle-right ml-2"></i></a>
 					</div>
+				</div>
+				<div class="card col-lg-4">
+					<img src="/public/images/bg/card.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -145,7 +149,7 @@
 				<div class="col-lg-7 col-xs-12 col-md-12">
 					<div class="row">
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<div class="icon-block text-center mb-4 mb-lg-0">
+							<div class="icon-block text-center mb-4">
 								<i class="fas fa-comments"></i>
 								<h5>Asesoramiento personalizado</h5>
 								<p>Nos adaptamos a tu sector y te guiamos en lo que realmente necesitas.</p>
@@ -153,7 +157,7 @@
 						</div>
 
 						<div class="col-lg-6 col-md-6 col-sm-6">
-							<div class="icon-block text-center mb-4 mb-lg-0">
+							<div class="icon-block text-center mt-4 mb-4 mb-lg-0">
 								<i class="fas fa-laptop-code"></i>
 								<h5>Diseño web profesional</h5>
 								<p>Webs modernas, funcionales y pensadas para convertir visitas en clientes.</p>
@@ -474,6 +478,49 @@
 				navbar.classList.remove('navbar-shadow');
 			}
 		});
+	</script>
+	<script>
+		const card = document.querySelector('.card');
+		const img = card.querySelector('img');
+
+		let targetRotateX = 0;
+		let targetRotateY = -30; // Inicial en -30
+		let currentX = 0;
+		let currentY = -30;
+
+		function lerp(a, b, t) {
+			return a + (b - a) * t;
+		}
+
+		function animate() {
+			currentX = lerp(currentX, targetRotateX, 0.08);
+			currentY = lerp(currentY, targetRotateY, 0.08);
+			img.style.transform = `
+    perspective(3000px)
+    rotateX(${currentX}deg)
+    rotateY(${currentY}deg)
+  `;
+			requestAnimationFrame(animate);
+		}
+
+		card.addEventListener('mousemove', (e) => {
+			const rect = card.getBoundingClientRect();
+			const x = e.clientX - rect.left;
+			const y = e.clientY - rect.top;
+			const centerX = rect.width / 2;
+			const centerY = rect.height / 2;
+
+			// Movimiento suave: solo ±4° desde la posición inicial
+			targetRotateX = ((y - centerY) / centerY) * -8;
+			targetRotateY = -30 + ((x - centerX) / centerX) * 6;
+		});
+
+		card.addEventListener('mouseleave', () => {
+			targetRotateX = 0;
+			targetRotateY = -30; // volver a posición inicial
+		});
+
+		animate();
 	</script>
 </body>
 

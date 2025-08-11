@@ -646,22 +646,30 @@ ul.dropdown-menu li {
   position: relative;
   overflow: hidden;
   background: #fff;
-  background: url("/images/bg/froddes-bg.png") no-repeat 80% 50%;
-  background-size: 90%;
+  background: url("/images/bg/bg.png") no-repeat;
+  background-size: cover;
   padding: 120px 0px;
   min-height: 800px;
 }
 .banner .block {
-  padding-top: 120px;
+  padding-top: 50px;
 }
 .banner .block h1 {
-  font-size: 65px;
+  font-size: 75px;
   line-height: 1.2;
   font-weight: 600;
   color: #222222;
   letter-spacing: -1.2px;
   text-transform: uppercase;
   font-family: "Goldman", sans-serif;
+}
+
+.banner .block h2 {
+  font-family: "Goldman", sans-serif;
+  font-weight: 600;
+  font-size: 45px;
+  margin-top: -20px;
+    /* text-transform: uppercase; */
 }
 
 .letter-spacing {
@@ -1832,7 +1840,7 @@ iframe {
   }
 } */
 
-.slick-slide img {
+#template-gallery .slick-slide img {
   height: auto !important;
 }
 
@@ -1853,7 +1861,7 @@ iframe {
     line-height: 36px;
   }
 
-  .heading{
+  .heading {
     margin-bottom: 60px;
   }
   /* Ajustar título principal */
@@ -1917,7 +1925,7 @@ iframe {
     padding: 0 20px;
   }
 
-  .row .heading{
+  .row .heading {
     padding: 0 10px;
   }
 
@@ -1937,15 +1945,15 @@ iframe {
     padding-top: 0 !important;
   }
 
-  .section.process{
+  .section.process {
     padding-bottom: 25px !important;
   }
 
-  .section.cta{
+  .section.cta {
     padding: 50px 0 !important;
   }
 
-  .section.portfolio{
+  .section.portfolio {
     padding: 50px 0 25px 0 !important;
   }
 
@@ -1953,11 +1961,35 @@ iframe {
     padding: 0;
   }
 
-  .section.counter{
+  .section.counter {
     padding: 50px 0 !important;
   }
 
-  .footer.section{
+  .footer.section {
     padding: 50px 0 !important;
   }
+}
+
+section.banner {
+  height: 100vh;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.card img {
+  margin-left: 25px;
+  width: 535px;
+  height: 325px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #00000057;
+  transform-style: preserve-3d;
+  transition: transform 0.1s ease;
+  transform: perspective(3000px) rotateY(-30deg);
 }
