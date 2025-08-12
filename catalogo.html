@@ -11,6 +11,8 @@
 
 	<title>Plantillas Web Profesionales para Negocios Locales | Froddes</title>
 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/logo-froddes.png" />
 
@@ -41,12 +43,12 @@
 </head>
 
 <body>
-	<div id="ws"></div>
+	<div id="n8n-chat"></div>
 	<nav class="navbar navbar-expand-lg py-4 navigation header-padding" id="navbar">
 		<!-- Navbar Here -->
 	</nav>
 
-	<section class="page-title bg-1" style="margin-top: 40px;">
+	<section class="page-title bg-froddes">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
@@ -120,10 +122,10 @@
     =====================================-->
 
 	<script type="module" src="/src/js/templates.js"></script>
+	<script type="module" src="/src/js/chatFAQ.js"></script>
 
 	<script src="/js/include.js"></script>
 	<script>
-		include("src/html/whatsapp.html", "#ws");
 		include("src/html/navbar.html", "#navbar");
 		include("src/html/footer.html", "#footer");
 	</script>

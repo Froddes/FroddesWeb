@@ -345,7 +345,7 @@ a:focus {
 }
 
 .page-title {
-  padding: 170px 0px 20px 0px;
+  padding: 210px 0px 50px 0px;
   position: relative;
 }
 .page-title .block h1 {
@@ -632,6 +632,25 @@ ul.dropdown-menu li {
     padding: 0px 30px;
   }
 }
+.bg-froddes {
+  background: url("/images/bg/froddes.png");
+  background-size: cover;
+  background-position: center ;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+  animation: scrollBackgroundCatalogo 20s linear infinite;
+}
+
+@keyframes scrollBackgroundCatalogo {
+  0% {
+    background-position: center 0vh;
+  }
+  100% {
+    background-position: center -100vh;
+  }
+}
+
 .bg-1 {
   background: url("/images/bg/section-bg5.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -644,7 +663,7 @@ ul.dropdown-menu li {
 
 .banner {
   background: url("/images/bg/bg.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
@@ -659,6 +678,7 @@ ul.dropdown-menu li {
   letter-spacing: -1.2px;
   text-transform: uppercase;
   font-family: "Goldman", sans-serif;
+  margin-top: 5px !important;
 }
 
 .banner .block h2 {
@@ -666,6 +686,7 @@ ul.dropdown-menu li {
   font-weight: 600;
   font-size: 45px;
   margin-top: -20px;
+  margin-bottom: 25px;
   /* text-transform: uppercase; */
 }
 
@@ -727,8 +748,17 @@ ul.dropdown-menu li {
 }
 
 .about {
-  background: url("/images/bg/about.png") no-repeat;
-  background-size: cover;
+  /* background: url("/images/bg/about.png") no-repeat; */
+  /* background-size: 100%; */
+  /* background-position: top; */
+  background: #ffffff;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(228, 246, 255, 0.4) 55%,
+    rgba(228, 246, 255, 0.4) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
   padding: 60px 0 115px 0;
 }
 
@@ -856,7 +886,7 @@ ul.dropdown-menu li {
 }
 
 .counter {
-  background: var(--froddes);
+  background-color: var(--froddes);
 }
 .counter .counter-item h2 {
   color: #fff;
@@ -999,10 +1029,22 @@ ul.dropdown-menu li {
   }
 }
 .cta {
-  background: url("/images/bg/att.jpg") no-repeat;
+  background: url("/images/bg/card.png");
   background-size: cover;
-  /* background-position: right; */
-  position: relative;
+  background-position: center ;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+  animation: scrollBackground 20s linear infinite;
+}
+
+@keyframes scrollBackground {
+  0% {
+    background-position: center 0vh;
+  }
+  100% {
+    background-position: center -112vh;
+  }
 }
 
 .mb-30 {
@@ -1112,6 +1154,7 @@ ul.dropdown-menu li {
 
 .portfolio {
   position: relative;
+  padding-bottom: 25px !important;
 }
 .portfolio:before {
   position: absolute;
@@ -1723,27 +1766,27 @@ div.iframe-menu .icons {
 }
 
 div.iframe-menu .icons i {
-  font-size: 35px;
-  background: rgba(110, 110, 110, 0.151);
-  width: 70px;
-  height: 70px;
+  font-size: 30px;
+  background: var(--dark);
+  width: 65px;
+  height: 65px;
   text-align: center;
   padding-top: 16px;
-  border-radius: 10px;
+  border-radius: 50%;
   display: inline-block;
-  color: var(--froddes);
+  color: #fff;
 
-  margin: 15px 0;
+  margin: 10px 0;
   cursor: pointer;
 
-  box-shadow: 0 0 10px #00000044;
+  box-shadow: 0 0 15px #00000063;
 
   transition: all 0.3s ease;
 }
 
 div.iframe-menu .icons i:hover {
-  color: #2ba198;
-  box-shadow: 0 0 10px #00000063;
+  background-color: #fff;
+  color: var(--dark);
 }
 
 .container-fluid.iframe {
@@ -1770,7 +1813,7 @@ iframe {
 
   font-size: 1.5em;
 
-  background-color: #d9e9e8;
+  background-color: var(--op);
   min-height: 600px;
   height: 85vh;
   width: 80vw;
@@ -1790,7 +1833,7 @@ iframe {
   margin: 0 10px;
   width: 40px;
   height: 40px;
-  background-color: var(--froddes);
+  background-color: #d6fcff;
   border-radius: 100%;
   animation: sk-pulse 1s infinite ease-in-out;
 }
@@ -1995,4 +2038,19 @@ section.banner {
   transform-style: preserve-3d;
   transition: transform 0.1s ease;
   transform: perspective(3000px) rotateY(-30deg);
+}
+
+nav {
+  animation: onLoadNavbar ease 1s;
+}
+
+@keyframes onLoadNavbar {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

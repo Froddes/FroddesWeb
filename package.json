@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@n8n/chat": "^0.47.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.5"
   }
 }
