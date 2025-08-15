@@ -1723,8 +1723,19 @@ ul.dropdown-menu li {
 
 .footer {
   padding-bottom: 10px;
-  background: #131313;
+  background-color: #000;
 }
+
+.footer.templates{
+  background: url("/images/bg/froddes.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+
+  animation: scrollBackground 30s linear infinite;
+}
+
 .footer .copyright a {
   font-weight: 600;
 }
