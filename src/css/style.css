@@ -651,6 +651,20 @@ ul.dropdown-menu li {
   }
 }
 
+.bg-contact {
+  background: url("/images/bg/contact.png") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.bg-sobre {
+  background: url("/images/bg/sobre-froddes.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: repeat-y;
+  /* background-attachment: fixed; */
+  animation: scrollBackgroundCatalogo 60s linear infinite;
+}
+
 .bg-1 {
   background: url("/images/bg/section-bg5.jpg") no-repeat 50% 50%;
   background-size: cover;
@@ -726,36 +740,36 @@ ul.dropdown-menu li {
   }
 }
 
-@media screen and (max-width: 575px){
-  section.portfolio div.heading{
+@media screen and (max-width: 575px) {
+  section.portfolio div.heading {
     padding-left: 1.5rem !important;
   }
 
-  section.about div.row div.col-lg-4{
+  section.about div.row div.col-lg-4 {
     padding: 0 3rem;
   }
-  section.banner div.block{
+  section.banner div.block {
     padding: 0 1.5rem;
   }
-  div.icon-block.text-center.mt-4.mb-4.mb-lg-0{
+  div.icon-block.text-center.mt-4.mb-4.mb-lg-0 {
     margin-top: 0 !important;
   }
-  footer{
+  footer {
     padding: 4rem 2rem 2rem 2rem !important;
   }
-  footer .list-inline-item i{
+  footer .list-inline-item i {
     font-size: 25px;
   }
 }
 
-@media screen and (max-width: 900px){
-  .portfolio-item-content{
+@media screen and (max-width: 900px) {
+  .portfolio-item-content {
     display: none;
   }
-  .overlay-item{
+  .overlay-item {
     display: none !important;
   }
-  .portflio-item:before{
+  .portflio-item:before {
     display: none !important;
   }
 }
@@ -767,23 +781,23 @@ ul.dropdown-menu li {
   .process-block {
     margin-bottom: 50px;
   }
-  .cta-content{
+  .cta-content {
     width: 100% !important;
   }
-  section.counter{
+  section.counter {
     padding: 75px 0 25px 0;
   }
-  .portfolio-item-content{
+  .portfolio-item-content {
     left: 15px !important;
     bottom: -5px !important;
   }
-  div.portflio-item .portfolio-item-content h3{
+  div.portflio-item .portfolio-item-content h3 {
     font-size: 100%;
   }
-  div.portflio-item .portfolio-item-content p{
+  div.portflio-item .portfolio-item-content p {
     font-size: 80%;
   }
-  section div.portflio-item .overlay-item i{
+  section div.portflio-item .overlay-item i {
     width: 50px;
     height: 50px;
     font-size: 60%;
@@ -791,7 +805,7 @@ ul.dropdown-menu li {
   }
 }
 @media (max-width: 1200px) {
-  .banner{
+  .banner {
     background-size: cover;
   }
   .block {
@@ -800,21 +814,21 @@ ul.dropdown-menu li {
   .row {
     justify-content: center;
   }
-  .about{
+  .about {
     background-size: 150%;
   }
-  .cta-content{
+  .cta-content {
     width: 115%;
   }
-  .portfolio-item-content h3{
+  .portfolio-item-content h3 {
     font-size: 125%;
   }
-  .portfolio-item-content p{
+  .portfolio-item-content p {
     font-size: 90%;
   }
-  div.portflio-item .overlay-item i{
-    width: 65px ;
-    height: 65px ;
+  div.portflio-item .overlay-item i {
+    width: 65px;
+    height: 65px;
     font-size: 80%;
   }
   .testimonial-wrap {
@@ -1726,8 +1740,8 @@ ul.dropdown-menu li {
   background-color: #000;
 }
 
-.footer.templates{
-  background: url("/images/bg/froddes.png");
+.footer.templates {
+  background: url("/images/bg/footer.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat-y;
@@ -1999,11 +2013,11 @@ iframe {
     min-height: 100vh;
   }
 
-  .banner .block h1{
+  .banner .block h1 {
     font-size: 3rem;
   }
 
-  .banner .block h2{
+  .banner .block h2 {
     font-size: 2.5rem;
   }
 
@@ -2060,7 +2074,7 @@ iframe {
   }
 
   .img-fluid {
-    width: 75%;
+    width: 100%;
   }
 
   nav {
@@ -2137,59 +2151,128 @@ nav {
   }
 }
 
-@media screen and (max-width: 1500px){
-  .card img{
+@media screen and (max-width: 1500px) {
+  .card img {
     width: 450px;
     height: 275px;
     margin-left: -20px;
   }
 }
 
-@media screen and (max-width: 1200px){
-  .card{
+@media screen and (max-width: 1200px) {
+  .card {
     display: none;
   }
-  .banner{
+  .banner {
     background-size: 100%;
   }
 }
 
 /* Catalogo */
 
-@media screen and (max-width: 1350px){
-  .portfolio-gallery{
-    padding: 0 4rem;;
+@media screen and (max-width: 1350px) {
+  .portfolio-gallery {
+    padding: 0 4rem;
   }
 }
 
-@media screen and (max-width: 900px){
-  .portfolio-gallery{
-    padding: 0 2rem;;
+@media screen and (max-width: 900px) {
+  .portfolio-gallery {
+    padding: 0 2rem;
   }
 }
 
-@media screen and (max-width: 600px){
-  section.cta-2 h2.mt-2.mb-4.mb-lg-0{
+@media screen and (max-width: 600px) {
+  section.cta-2 h2.mt-2.mb-4.mb-lg-0 {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 757px){
-    section.cta-2 .cta-block.py-5{
+@media screen and (max-width: 757px) {
+  section.cta-2 .cta-block.py-5 {
     padding-left: 1rem;
   }
 }
 
-@media screen and (max-width: 480px){
-  .portfolio-gallery{
-    padding: 0 1rem;;
+@media screen and (max-width: 575px) {
+  section.section#gallery .container-fluid.tags {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-gallery {
+    padding: 0 1rem;
   }
 
-  section.bg-froddes{
+  section.bg-froddes {
     padding: 175px 0 20px 0;
   }
 
-  section.bg-froddes h1{
+  section.bg-froddes h1 {
     font-size: 2.5rem;
+  }
+  h2#category-title{
+    font-size: 2rem !important;
+  }
+}
+
+/* Testimonial */
+
+@media screen and (max-width: 1460px) {
+  .testimonial-wrap {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .testimonial-wrap {
+    margin-left: 10px;
+  }
+}
+
+/* Sobre Nosotros */
+
+@media screen and (max-width: 575px) {
+  section.section.awards div.col-lg-2.col-md-4.col-sm-6.mb-4 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+  section.section.awards .container .row .col-lg-8 p {
+    text-align: center !important;
+  }
+  section.section.awards div.col-lg-2.col-md-4.col-sm-6.mb-4 p {
+    padding-top: 10px;
+  }
+  section.section.awards div.col-lg-2.col-md-4.col-sm-6.mb-4 i {
+    font-size: 30px !important;
+    border: 2px solid var(--froddes);
+    border-radius: 50%;
+    padding: 10px;
+    color: white !important;
+    background-color: var(--froddes);
+  }
+  section.section.awards h2 {
+    text-align: center;
+  }
+  .section {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section.bg-sobre h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Contacto */
+
+@media screen and (max-width: 480px) {
+  section.bg-contact h1 {
+    font-size: 2.5rem;
+  }
+  .contact-form-wrap.section{
+    text-align: center;
   }
 }
