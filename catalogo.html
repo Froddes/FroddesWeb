@@ -21,14 +21,13 @@
 	<link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
 	<!-- Icon Font Css -->
 	<link rel="stylesheet" href="/plugins/themify/css/themify-icons.css">
-	<link rel="stylesheet" href="/plugins/fontawesome/css/all.css">
 	<link rel="stylesheet" href="/plugins/magnific-popup/dist/magnific-popup.css">
 	<link rel="stylesheet" href="/plugins/modal-video/modal-video.css">
-	<link rel="stylesheet" href="/plugins/animate-css/animate.css">
 	<!-- Slick Slider  CSS -->
 	<link rel="stylesheet" href="/plugins/slick-carousel/slick/slick.css">
 	<link rel="stylesheet" href="/plugins/slick-carousel/slick/slick-theme.css">
-
+	<!-- aos -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="/src/css/style.css">
 	<script type="application/ld+json">
@@ -52,7 +51,7 @@
 	<section class="page-title bg-froddes">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12" data-aos="fade-down" data-aos-delay="0" data-aos-duration="1000">
 					<div class="block text-center">
 						<span class="text-white">Diseños listos para tu negocio</span>
 						<h1 class="text-capitalize mb-5 text-lg">Plantillas Web Profesionales</h1>
@@ -133,18 +132,6 @@
 	<!-- Main jQuery -->
 	<script src="/plugins/jquery/jquery.js"></script>
 	<script src="/js/contact.js"></script>
-	<!-- Bootstrap 4.3.2 -->
-	<script src="/plugins/bootstrap/js/popper.js"></script>
-	<script src="/plugins/bootstrap/js/bootstrap.min.js"></script>
-	<!--  Magnific Popup-->
-	<script src="/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-	<!-- Slick Slider -->
-	<script src="/plugins/slick-carousel/slick/slick.min.js"></script>
-	<!-- Counterup -->
-	<script src="/plugins/counterup/jquery.waypoints.min.js"></script>
-	<script src="/plugins/counterup/jquery.counterup.min.js"></script>
-
-	<script src="/plugins/modal-video/modal-video.js"></script>
 
 	<script src="/js/script.js"></script>
 	<script>
@@ -155,6 +142,12 @@
 			} else {
 				navbar.classList.remove('navbar-shadow');
 			}
+		});
+	</script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true
 		});
 	</script>
 </body>

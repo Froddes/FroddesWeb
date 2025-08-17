@@ -8,7 +8,7 @@
         "id": 1,
         "ref": "et1",
         "title": "Estilo Corte 1",
-        "img": "/images/templates/estilo_corte1.png",
+        "img": "/images/templates/estilo_corte1.webp",
         "alt": "Plantilla Estilo Corte 1 para peluquerías y salones de belleza",
         "icon": "fas fa-cut",
         "url": "https://estilo-corte-1.netlify.app/"
@@ -17,7 +17,7 @@
         "id": 2,
         "ref": "et2",
         "title": "Estilo Corte 2",
-        "img": "/images/templates/estilo_corte2.png",
+        "img": "/images/templates/estilo_corte2.webp",
         "alt": "Plantilla Estilo Corte 2 para peluquerías y salones de belleza",
         "icon": "fas fa-cut",
         "url": "https://estilo-corte-2.netlify.app/"
@@ -26,7 +26,7 @@
         "id": 3,
         "ref": "et3",
         "title": "Estilo Corte 3",
-        "img": "/images/templates/estilo_corte3.png",
+        "img": "/images/templates/estilo_corte3.webp",
         "alt": "Plantilla Estilo Corte 3 para peluquerías y centros estéticos",
         "icon": "fas fa-cut",
         "url": "https://estilo-corte-3.netlify.app/"
@@ -35,7 +35,7 @@
         "id": 4,
         "ref": "et4",
         "title": "Estilo Corte 4",
-        "img": "/images/templates/estilo_corte4.png",
+        "img": "/images/templates/estilo_corte4.webp",
         "alt": "Plantilla Estilo Corte 4 para negocios de belleza",
         "icon": "fas fa-cut",
         "url": "https://estilo-corte-4.netlify.app/"
@@ -51,7 +51,7 @@
         "id": 1,
         "ref": "pg",
         "title": "Power Gym",
-        "img": "/images/templates/powergym.png",
+        "img": "/images/templates/powergym.webp",
         "alt": "Plantilla Power Gym para gimnasios y entrenadores personales",
         "icon": "fas fa-heart",
         "url": "https://powwergymm.netlify.app/"
@@ -60,7 +60,7 @@
         "id": 2,
         "ref": "pf",
         "title": "Power Fitness",
-        "img": "/images/templates/powerfitness.png",
+        "img": "/images/templates/powerfitness.webp",
         "alt": "Plantilla Power Fitness para centros de salud y fitness",
         "icon": "fas fa-heart",
         "url": "https://power-fitnes.netlify.app/"
@@ -76,7 +76,7 @@
         "id": 1,
         "ref": "byc",
         "title": "Barril & Co.",
-        "img": "/images/templates/barrilco.png",
+        "img": "/images/templates/barrilco.webp",
         "alt": "Plantilla Barril & Co. para bares, restaurantes y negocios de hostelería",
         "icon": "fas fa-wine-glass-alt",
         "url": "https://barrilco.netlify.app/"
@@ -85,7 +85,7 @@
         "id": 2,
         "ref": "rw",
         "title": "Restaurant Wheel",
-        "img": "/images/templates/wheel.png",
+        "img": "/images/templates/wheel.webp",
         "alt": "Plantilla Restaurant para bares, restaurantes y negocios de hostelería",
         "icon": "fas fa-wine-glass-alt",
         "url": "https://restaurant-wheel.netlify.app/"
@@ -101,7 +101,7 @@
         "id": 1,
         "ref": "dg",
         "title": "Diseñador Gráfico",
-        "img": "/images/templates/diseñador_grafico.png",
+        "img": "/images/templates/diseñador_grafico.webp",
         "alt": "Plantilla Diseñador Gráfico para portfolios profesionales",
         "icon": "fas fa-briefcase",
         "url": "https://disenador-grafico.netlify.app/"
@@ -110,7 +110,7 @@
         "id": 2,
         "ref": "dsw",
         "title": "DJ Sonic Wave",
-        "img": "/images/templates/dj_sonic_wave.png",
+        "img": "/images/templates/dj_sonic_wave.webp",
         "alt": "Plantilla DJ Sonic Wave para músicos y DJs independientes",
         "icon": "fas fa-briefcase",
         "url": "https://dj-sonic-wave.netlify.app/"
@@ -126,7 +126,7 @@
         "id": 1,
         "ref": "gs",
         "title": "Galería Slide",
-        "img": "/images/templates/galeria1.png",
+        "img": "/images/templates/galeria1.webp",
         "alt": "Plantilla Galería Slide para fotógrafos y portfolios visuales",
         "icon": "fas fa-images",
         "url": "https://photogalleryv3.netlify.app/"
@@ -135,7 +135,7 @@
         "id": 2,
         "ref": "gb",
         "title": "Galería BLock",
-        "img": "/images/templates/galeria2.png",
+        "img": "/images/templates/galeria2.webp",
         "alt": "Plantilla Galería Block para mostrar proyectos creativos",
         "icon": "fas fa-images",
         "url": "https://photogalleryv1.netlify.app/"
@@ -151,7 +151,7 @@
         "id": 1,
         "ref": "ej",
         "title": "Eternal Journey",
-        "img": "/images/templates/eternal_journey.png",
+        "img": "/images/templates/eternal_journey.webp",
         "alt": "Plantilla Eternal Journey para blogs de viajes y agencias turísticas",
         "icon": "fas fa-plane",
         "url": "https://eternall-journey.netlify.app/"
