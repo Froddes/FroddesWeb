@@ -770,6 +770,11 @@ ul.dropdown-menu li {
 }
 
 @media (max-width: 992px) {
+  /* Compactar la barra de navegación */
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
   section.banner {
     background-size: 150%;
   }
@@ -2011,12 +2016,6 @@ iframe {
     font-size: 2.5rem;
   }
 
-  /* Compactar la barra de navegación */
-  .navbar {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-
   /* Centrado y apilado de elementos "about" */
   .about-item {
     display: flex;
@@ -2202,7 +2201,7 @@ nav {
   section.bg-froddes h1 {
     font-size: 2.5rem;
   }
-  h2#category-title{
+  h2#category-title {
     font-size: 2rem !important;
   }
 }
@@ -2262,7 +2261,7 @@ nav {
   section.bg-contact h1 {
     font-size: 2.5rem;
   }
-  .contact-form-wrap.section{
+  .contact-form-wrap.section {
     text-align: center;
   }
 }
