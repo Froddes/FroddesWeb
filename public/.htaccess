@@ -11,7 +11,7 @@ style-src 'self' 'unsafe-inline' https:; \
 style-src-elem 'self' 'unsafe-inline' https:; \
 img-src 'self' data: blob: https:; \
 font-src 'self' data: https:; \
-connect-src 'self' https://primary-production-fad55.up.railway.app wss://primary-production-fad55.up.railway.app https:; \
+connect-src 'self' https://primary-production-5d30.up.railway.app wss://primary-production-5d30.up.railway.app https:; \
 "
 
   # CORS (no soluciona CSP, pero lo dejo como lo tenías)
