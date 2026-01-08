@@ -5,7 +5,7 @@
 <IfModule mod_headers.c>
     # CSP para archivos HTML
     <FilesMatch "\.(html|htm|php)$">
-        Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; script-src-elem 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://primary-production-5d30.up.railway.app;"
+        Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; script-src-elem 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com https://primary-production-5d30.up.railway.app;"
     </FilesMatch>
 </IfModule>
 
