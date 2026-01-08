@@ -12,7 +12,24 @@
 
 	<!-- theme meta -->
 	<meta name="theme-name" content="orbitor" />
-	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://unpkg.com; img-src 'self' https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://stats.g.doubleclick.net;">
+	    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+        style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; 
+        font-src 'self' https://fonts.gstatic.com; 
+        script-src 'self' 'nonce-3hXDQLKhy5M6ToDfgvsfwQ' https://www.googletagmanager.com; 
+        connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com;
+        base-uri 'self'; 
+        img-src 'self' data:;
+        require-trusted-types-for 'script';">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6GRG667K9Z"></script>
+    <script nonce="3hXDQLKhy5M6ToDfgvsfwQ">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-6GRG667K9Z', {
+            cookie_flags: 'SameSite=None;Secure'
+        });
+    </script>
 
 	<title>Diseño Web y Chatbots para Negocios Locales | Froddes</title>
 
@@ -482,15 +499,6 @@
 		AOS.init({
 			once: true
 		});
-	</script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6GRG667K9Z"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'G-6GRG667K9Z');
 	</script>
 </body>
 
