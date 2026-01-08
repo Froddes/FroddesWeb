@@ -1,20 +1,22 @@
 # ===============================================
-# CONTENT SECURITY POLICY para Froddes
+# 1. POLÍTICA DE SEGURIDAD (CSP) GLOBAL
 # ===============================================
-
 <IfModule mod_headers.c>
-    # CSP para archivos HTML
-    <FilesMatch "\.(html|htm|php)$">
-        Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; script-src-elem 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com https://primary-production-5d30.up.railway.app;"
-    </FilesMatch>
+    # Borramos cualquier regla anterior para evitar conflictos
+    Header unset Content-Security-Policy
+    
+    # Definimos la regla maestra. 
+    # Incluye permisos para: Google, Railway, Cloudflare, Unpkg y TU IFRAME DE NETLIFY.
+    # Nota: Todo esto va en una sola línea.
+    Header set Content-Security-Policy "default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com https://primary-production-5d30.up.railway.app; frame-src 'self' https://*.netlify.app; base-uri 'self'; img-src 'self' data: https:;"
 </IfModule>
 
 # ===============================================
-# SEGURIDAD ADICIONAL (Opcional pero recomendado)
+# 2. SEGURIDAD ADICIONAL (Tus reglas originales)
 # ===============================================
 
 <IfModule mod_headers.c>
-    # Prevenir clickjacking
+    # Prevenir clickjacking (Evita que otros te metan en un iframe, salvo tú mismo)
     Header always set X-Frame-Options "SAMEORIGIN"
     
     # Protección XSS
@@ -31,7 +33,7 @@
 </IfModule>
 
 # ===============================================
-# COMPRESIÓN GZIP (Mejora velocidad)
+# 3. COMPRESIÓN GZIP (Mejora velocidad)
 # ===============================================
 
 <IfModule mod_deflate.c>
@@ -39,7 +41,7 @@
 </IfModule>
 
 # ===============================================
-# CACHE DEL NAVEGADOR (Mejora velocidad)
+# 4. CACHE DEL NAVEGADOR (Mejora velocidad)
 # ===============================================
 
 <IfModule mod_expires.c>
@@ -61,7 +63,7 @@
 </IfModule>
 
 # ===============================================
-# REDIRECCIÓN HTTPS (Forzar conexión segura)
+# 5. REDIRECCIÓN HTTPS (Forzar conexión segura)
 # ===============================================
 
 RewriteEngine On
@@ -69,7 +71,7 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # ===============================================
-# PROTECCIÓN DE ARCHIVOS SENSIBLES
+# 6. PROTECCIÓN DE ARCHIVOS SENSIBLES
 # ===============================================
 
 <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
