@@ -5,7 +5,7 @@ import { createChat } from '@n8n/chat';
 
 function initializeChat(){
     const chat = createChat({
-        webhookUrl: 'https://primary-production-5d30.up.railway.app/webhook/67a51fd6-18d8-429a-9e5d-736b19dfc7d6/chat',
+        webhookUrl: 'https://n8n.froddes.com/webhook/67a51fd6-18d8-429a-9e5d-736b19dfc7d6/chat',
         webhookConfig: {
             method: 'POST',
             headers: {

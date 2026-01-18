@@ -2089,7 +2089,7 @@ iframe {
 
   font-size: 1.5em;
 
-  background-color: var(--op);
+  background-color: #006b620a;
   min-height: 600px;
   height: 85vh;
   width: 80vw;
@@ -2109,7 +2109,7 @@ iframe {
   margin: 0 10px;
   width: 40px;
   height: 40px;
-  background-color: #d6fcff;
+  background-color: var(--op);
   border-radius: 100%;
   animation: sk-pulse 1s infinite ease-in-out;
 }
