@@ -8,7 +8,7 @@
     # Definimos la regla maestra. 
     # Incluye permisos para: Google, Railway, Cloudflare, Unpkg y TU IFRAME DE NETLIFY.
     # Nota: Todo esto va en una sola línea.
-    Header set Content-Security-Policy "default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com https://primary-production-5d30.up.railway.app; frame-src 'self' https://*.netlify.app; base-uri 'self'; img-src 'self' data: https:;"
+    Header set Content-Security-Policy "default-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com https://unpkg.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; script-src 'self' 'nonce-Froddes2026SecureTag' https://www.googletagmanager.com https://cdnjs.cloudflare.com https://unpkg.com; connect-src 'self' https://region1.google-analytics.com https://www.googletagmanager.com https://n8n.froddes.com; frame-src 'self' https://*.netlify.app; base-uri 'self'; img-src 'self' data: https:;"
 </IfModule>
 
 # ===============================================
