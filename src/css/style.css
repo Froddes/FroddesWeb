@@ -2032,7 +2032,7 @@ ul.dropdown-menu li {
 div.iframe-menu {
   margin-right: -75px;
   position: absolute;
-  left: 70px;
+  left: 40px;
 }
 
 div.iframe-menu .icons {
@@ -2063,6 +2063,21 @@ div.iframe-menu .icons i {
 div.iframe-menu .icons i:hover {
   background-color: #fff;
   color: var(--dark);
+}
+
+@media screen and (max-width: 1200px){
+  div.iframe-menu{
+    display: none;
+  }
+  iframe#iframe{
+    width:90vw !important; 
+  }
+}
+
+@media screen and (max-width: 576px){
+  iframe#iframe{
+    margin-top: 40px;
+  }
 }
 
 .container-fluid.iframe {
