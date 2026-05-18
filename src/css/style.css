@@ -912,6 +912,7 @@ ul.dropdown-menu li {
     width: 65px;
     height: 65px;
     font-size: 80%;
+    padding-top: 20px;
   }
 
   .testimonial-wrap {
@@ -1405,7 +1406,7 @@ ul.dropdown-menu li {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
+  font-size: 35px;
   color: #fff;
   opacity: 0;
   transition: all 0.35s ease;
@@ -1418,7 +1419,7 @@ ul.dropdown-menu li {
   border-radius: 100%;
   display: inline-block;
   background: rgba(255, 255, 255, 0.06);
-  padding-top: 15px;
+  padding-top: 22.5px;
 }
 
 .portflio-item:hover .overlay-item {

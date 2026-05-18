@@ -30,7 +30,7 @@ function activateView(type, iframe) {
             iframe.style.width = "50vw";
             break;
         case "mobile":
-            iframe.style.width = "25vw";
+            iframe.style.width = "30vw";
             break;
         default:
             iframe.style.width = "80vw";
